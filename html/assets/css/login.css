@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*共通部分
+----------------------------------*/
+body {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+/*ホーム
+-------------------------------------*/
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.subcatch {
+    font-size: 1.125rem;
+    color: #1760a0;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+    margin: 10px 0 42px;
+}
+.text {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+/*背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#home {
+    background-image: url(../img/ramen8.jpg);
+    min-height: 100vh;
+    overflow: auto;
+}
+/*見出し*/
+h1 {
+    font-size: 5rem;
+    color: #1760a0;
+    letter-spacing: 6px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+/*ボタン*/
+.login {
+    display       : inline-block;
+    border-radius : 5px;         /* 角丸       */
+    font-size     : 1.375rem;    /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 14px 32px;   /* 余白       */
+    background    : #ffaa00;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .5s;         /* なめらか変化 */
+    box-shadow    : 3px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #ffaa00;    /* 枠の指定 */
+    margin-bottom : 50px;
+    }
+.login:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #ffaa00;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+    }
+.button {
+    font-size     : 0.92rem;
+    background    : #0bd;
+    color         : #fff;
+    border-radius : 5px;
+    padding       : 18px 32px;
+    transition    : .5s;         /* なめらか変化 */
+    box-shadow    : 3px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #0bd;    /* 枠の指定 */
+}
+.button:hover {
+    box-shadow    :  none;        /* カーソル時の影消去 */
+    color         :  #0bd;
+    background    :  #fff;   
+    text-decoration: none;
+}

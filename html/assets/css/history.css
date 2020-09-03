@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    line-height: 1.7;
+}
+/*背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#home {
+    background-image: url(../img/ramen8.jpg);
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.history {
+    margin: 0 auto;
+    width: 85%;
+    font-family: "Sawarabi Gothic";
+}
+/*商品一覧部分--------*/
+article {
+    width: 100%;
+    background    : rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    border-bottom: ridge 2px #ffaa00;
+    margin: 10px;
+    padding: 10px;
+}
+.title h1 {
+    font-size: 20px;
+}
+.history-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.thead {
+    background-color: #ff9933;
+}
+tbody {
+    background-color: #fff;
+}

@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/*背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#home {
+    background-image: url(../img/ramen8.jpg);
+    min-height: 100vh;
+    overflow: auto;
+}
+/*メインコンテンツ部分
+---------------------------------------*/
+.red {
+    color: red;
+    text-align: center;
+}
+.itemlist-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 60%;
+    font-family: "Sawarabi Gothic";
+}
+/*商品一覧部分--------*/
+article {
+    width: 74%;
+    background    : rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: ridge 2px #ffaa00;
+    margin: 10px;
+    padding: 10px;
+}
+h1 {
+    font-size: 20px;
+}
+.item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff9933;
+    text-align: center
+}
+.item p {
+    margin-bottom: 5px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    word-break: break-all;
+}
+.img {
+    display: block;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.img img {
+    max-height: 100%;
+}
+/*カートに入れるボタン*/
+.button {
+    display       : inline-block;
+    border-radius : 5px;         /* 角丸       */
+    font-size     : 0.8rem;    /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 14px 32px;   /* 余白       */
+    background    : #0bd;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .5s;         /* なめらか変化 */
+    box-shadow    : 3px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #0bd;    /* 枠の指定 */
+    margin-bottom : 10px;
+    }
+.button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #0bd;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+    }
+
+/*検索条件部分--------*/
+aside {
+    width         : 22%;
+    height        : 100%;
+    background    : rgba(255, 255, 255, 0.50);
+    border-radius : 10px;
+}
+.conditions {
+    padding       : 10px;
+}
+.conditions h1 {
+    border-bottom : ridge 2px #ffaa00;
+}
+.conditions h2 {
+    border-bottom : ridge 2px #ffaa00;
+}
+

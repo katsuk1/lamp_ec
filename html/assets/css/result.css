@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+
+/*背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#home {
+    background-image: url(../img/ramen8.jpg);
+    min-height: 100vh;
+    overflow: auto;
+}
+.result {
+    margin: 0 auto;
+    width: 70%;
+    font-family: "Sawarabi Gothic";
+}
+.result p {
+    color: #000;
+}
+article {
+    width: 100%;
+    background    : rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.title {
+    display: flex;
+    border-bottom: ridge 2px #ffaa00;
+    margin: 10px;
+    padding: 10px;
+}
+.title h1 {
+    font-size: 20px;
+}
+.table {
+    width: 90%;
+    margin: 0 auto;
+}
+.table p {
+    color: #000;
+}
+.thead {
+    background-color: #ff9933;
+}
+tbody {
+    background-color: #fff;
+}
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff9933;
+    text-align: center
+    
+}
+.item p {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: initial;
+}
+.item-wrapper a {
+    color: #000;
+}
+.item-wrapper a:hover {
+    color: #0bd;
+    text-decoration: none;
+}
+.item-name {
+    font-size :20px;
+    font-weight: bold;
+}
+.buy-sum-box {
+    width: 90%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.buy-sum-box p {
+    font-size: 20px;
+    color: #000;
+}

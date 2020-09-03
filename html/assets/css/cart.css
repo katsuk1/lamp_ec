@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+body {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#home {
+    background-image: url(../img/ramen8.jpg);
+    min-height: 100vh;
+    overflow: auto;
+}
+/*メインコンテンツ部分
+---------------------------------------*/
+.cart {
+    width: 40%;
+    font-family: "Sawarabi Gothic";
+    margin: 0 auto;
+}
+/*商品一覧部分--------*/
+article {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.title {
+    border-bottom: ridge 2px #ffaa00;
+    margin: 10px;
+    padding: 10px;
+}
+.title h1 {
+    font-size: 20px;
+}
+.item {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff9933;
+    text-align: center
+    
+}
+.item p {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+}
+.img {
+    width: 100%;
+}
+.img img {
+    max-height: 100%;
+}
+.buy-sum-box {
+    width: 90%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.buy-sum-box p {
+    font-size: 20px;
+    color: #000;
+}
+/*ボタン*/
+.delete {
+    display       : inline-block;
+    border-radius : 5px;         /* 角丸       */
+    font-size     : 0.8rem;    /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 14px 32px;   /* 余白       */
+    background    : #0bd;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .5s;         /* なめらか変化 */
+    box-shadow    : 3px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #0bd;    /* 枠の指定 */
+    margin        : 10px 0;
+    }
+.delete:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #0bd;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+    }
+.buy {
+    text-align: center;
+} 
+.buy input {
+    display       : inline-block;
+    width: 70%;
+    border-radius : 5px;         /* 角丸       */
+    font-size     : 0.8rem;    /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 14px 32px;   /* 余白       */
+    background    : red;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .5s;         /* なめらか変化 */
+    box-shadow    : 3px 3px #666666;  /* 影の設定 */
+    border        : 2px solid red;    /* 枠の指定 */
+    margin-bottom : 10px;
+}
+.buy input:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : red;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+    }
