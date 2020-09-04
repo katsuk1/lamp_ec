@@ -55,7 +55,7 @@
                         </tbody>
                     </table>
 <?php } else { ?>
-                    <p>購入明細はありません。</p>
+                    <p>購入明細はありません</p>
 <?php } ?> 
                 </div>
             </article>
