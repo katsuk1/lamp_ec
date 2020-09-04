@@ -129,3 +129,29 @@ aside {
     padding-inline-start: 0;
 }
 
+/*モバイル版
+---------------------------*/
+@media (max-width: 600px) {
+    #home {
+        min-height: 70vh;
+    }
+    .itemlist-contents{
+        width: 95%;
+    }
+    aside {
+        width: 33%;
+    }
+    article {
+        width: 62%;
+    }
+    .title {
+        display: block;
+    }
+    .item-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        width: 8em;
+    }
+}

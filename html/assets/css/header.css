@@ -39,3 +39,21 @@ p {
 .underline:hover {
     color: #0bd;
 }
+
+/*モバイル版
+---------------------------*/
+@media (max-width: 600px) {
+    a {
+        font-size: 0.8rem;
+    }
+    .cart-icon {
+        width: 30px;
+    }
+    img {
+        width: 80px;
+    }
+    .text {
+        width: 14em;
+        margin-bottom: 5px;
+    }
+}

@@ -21,6 +21,9 @@
     margin: 10px;
     padding: 10px;
 }
+.title h1 {
+    font-size: 20px;
+}
 article {
     background    : rgba(255, 255, 255, 0.50);
     border-radius: 10px;
@@ -39,4 +42,17 @@ th {
 }
 tbody {
     background-color: #fff;
+}
+/*モバイル版
+---------------------------*/
+@media (max-width: 600px) {
+    #home {
+        min-height: 70vh;
+    }
+    th {
+        font-size: 5px;
+    }
+    td {
+        font-size: 5px;
+    }
 }
