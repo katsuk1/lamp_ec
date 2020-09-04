@@ -132,8 +132,9 @@ aside {
 /*モバイル版
 ---------------------------*/
 @media (max-width: 600px) {
-    #home {
-        min-height: 70vh;
+    .big-bg {
+        background-size: contain;
+        background-repeat: repeat;
     }
     .itemlist-contents{
         width: 95%;

@@ -50,19 +50,20 @@ tbody {
 /*モバイル版
 ---------------------------*/
 @media (max-width: 600px) {
-    #home {
-        min-height: 70vh;
+    .big-bg {
+        background-size: contain;
+        background-repeat: repeat;
     }
     p {
-        font-size: 5px;
+        font-size: 7px;
     }
     th {
-        font-size: 5px;
+        font-size: 7px;
     }
     td {
-        font-size: 5px;
+        font-size: 7px;
     }
     .btn {
-        font-size: 5px;
+        font-size: 7px;
     }
 }

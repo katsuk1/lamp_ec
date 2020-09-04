@@ -46,13 +46,14 @@ tbody {
 /*モバイル版
 ---------------------------*/
 @media (max-width: 600px) {
-    #home {
-        min-height: 70vh;
+    .big-bg {
+        background-size: contain;
+        background-repeat: repeat;
     }
     th {
-        font-size: 5px;
+        font-size: 7px;
     }
     td {
-        font-size: 5px;
+        font-size: 7px;
     }
 }
