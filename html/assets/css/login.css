@@ -1,15 +1,11 @@
 @charset "UTF-8";
 
-/*共通部分
-----------------------------------*/
 body {
     line-height: 1.7;
 }
 a {
     text-decoration: none;
 }
-/*ホーム
--------------------------------------*/
 .home-content {
     text-align: center;
     margin-top: 10%;

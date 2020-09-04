@@ -123,5 +123,9 @@ aside {
 }
 .conditions h2 {
     border-bottom : ridge 2px #ffaa00;
+    font-size: 1rem
+}
+.conditions ul {
+    padding-inline-start: 0;
 }
 
