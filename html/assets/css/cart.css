@@ -22,14 +22,11 @@ img {
     min-height: 100vh;
     overflow: auto;
 }
-/*メインコンテンツ部分
----------------------------------------*/
 .cart {
-    width: 40%;
+    width: 70%;
     font-family: "Sawarabi Gothic";
     margin: 0 auto;
 }
-/*商品一覧部分--------*/
 article {
     width: 100%;
     background: rgba(255, 255, 255, 0.50);
@@ -44,29 +41,37 @@ article {
 .title h1 {
     font-size: 20px;
 }
-.item {
+.item-wrapper {
     display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item {
+    width: 200px;
+    margin: 10px;
     padding: 10px;
     border-radius: 5px;
     background-color: #ff9933;
     text-align: center
-    
 }
 .item p {
     margin-bottom: 10px;
     background-color: #fff;
     border-radius: 5px;
     color: #000;
+    word-break: break-all;
 }
 .img {
-    width: 100%;
+    display: block;
+    height: 100px;
+    margin-bottom: 10px;
 }
 .img img {
     max-height: 100%;
+}
+.number {
+    width: 9em;
+    margin-bottom: 8px;
 }
 .buy-sum-box {
     width: 90%;
@@ -122,3 +127,16 @@ article {
     color         : red;     /* 背景色     */
     background    : #ffffff;     /* 文字色     */
     }
+
+    /*モバイル版
+---------------------------*/
+@media (max-width: 600px) {
+    .big-bg {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+    .item-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+}

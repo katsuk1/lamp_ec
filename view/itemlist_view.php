@@ -97,7 +97,7 @@
                 <div class="title">
                     <h1>商品一覧</h1>
                     <form method = "post">
-                        <input type="text" name="search_text" value="<?php print h($search_text); ?>" placeholder = "店舗名または商品名から検索">
+                        <input type="text" name="search_text" value="<?php print h($search_text); ?>" placeholder = "商品名から検索" class="text">
                         <input type="submit" value="検索" class="btn btn-primary">
                         <input type="hidden" name = "csrf_token" value="<?php print $token;?>">
                     </form>

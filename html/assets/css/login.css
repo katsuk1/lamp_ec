@@ -86,3 +86,17 @@ h1 {
     background    :  #fff;   
     text-decoration: none;
 }
+
+/*モバイル版
+---------------------------*/
+@media (max-width: 600px) {
+    #home {
+        min-height: 70vh;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .subcatch {
+        font-size: 0.8rem;
+    }
+}

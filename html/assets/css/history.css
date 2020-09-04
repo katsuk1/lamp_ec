@@ -47,3 +47,23 @@ article {
 tbody {
     background-color: #fff;
 }
+/*モバイル版
+---------------------------*/
+@media (max-width: 600px) {
+    .big-bg {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+    p {
+        font-size: 7px;
+    }
+    th {
+        font-size: 7px;
+    }
+    td {
+        font-size: 7px;
+    }
+    .btn {
+        font-size: 7px;
+    }
+}

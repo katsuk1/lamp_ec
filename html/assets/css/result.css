@@ -21,7 +21,7 @@ a {
 }
 .result {
     margin: 0 auto;
-    width: 70%;
+    width: 98%;
     font-family: "Sawarabi Gothic";
 }
 .result p {
@@ -84,8 +84,9 @@ tbody {
     text-decoration: none;
 }
 .item-name {
-    font-size :20px;
+    font-size :14px;
     font-weight: bold;
+    word-break: break-all;
 }
 .buy-sum-box {
     width: 90%;
@@ -93,6 +94,26 @@ tbody {
     margin-bottom: 10px;
 }
 .buy-sum-box p {
-    font-size: 20px;
+    font-size: 14px;
     color: #000;
+}
+/*モバイル版
+---------------------------*/
+@media (max-width: 600px) {
+    .big-bg {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+    p {
+        font-size: 7px;
+    }
+    th {
+        font-size: 7px;
+    }
+    td {
+        font-size: 7px;
+    }
+    a {
+        font-size: 7px;
+    }
 }
