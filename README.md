@@ -1,5 +1,5 @@
-# オンラインラーメン店 ON.RAMEN
-![スクリーンショット 2020-09-05 9 22 18](https://user-images.githubusercontent.com/64111163/92292837-4ca1f900-ef5a-11ea-8d4c-0f7347fbbab4.png)
+# オンラインラーメンショップ ON.RAMEN
+![スクリーンショット 2020-09-06 14 48 45](https://user-images.githubusercontent.com/64111163/92319411-d03f1100-f052-11ea-9b2a-573f32574bf3.png)
 
 ## 概要
 「お家で気軽に行列店のラーメンを！」
@@ -7,9 +7,11 @@
 
 ## URL
 http://onramen.com/login.php
+
 [一般ユーザー]
 ユーザー名:sampleuser
 パスワード:password
+
 [管理ユーザー]
 ユーザー名:admin
 パスワード:password
@@ -46,6 +48,8 @@ http://onramen.com/login.php
 * 商品検索(キーワード検索、カテゴリ検索3種→セッションに保存)
 * 購入履歴・詳細の表示
 * レスポンシブデザイン(メディアクエリ、BootStrapを利用)
+
+![IMG_6510](https://user-images.githubusercontent.com/64111163/92319357-1c3d8600-f052-11ea-925e-6a326e067622.PNG)
 
 ## 環境・使用技術
 
@@ -84,4 +88,3 @@ http://onramen.com/login.php
 新卒で1年3ヶ月不動産売買仲介会社に勤務しておりました。2020年6月からエンジニアを目指して勉強中です。
 
 twitter: https://twitter.com/kato_satsu
-
