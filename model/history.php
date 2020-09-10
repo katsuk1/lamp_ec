@@ -82,6 +82,46 @@ function get_purchase_details($db, $history_id){
   return fetch_all_query($db, $sql, $params);
 }
 
+/**
+ * 全ユーザーの購入商品数TOP3の商品データを配列で取得
+ * 
+ * @param obj $db PDO
+ * @param int $history_id 注文ID
+ * @return array 結果配列データ 
+ */
+function get_details_ranking($db){
+  $sql = "
+    SELECT
+    SUM(ec_purchase_details.amount) AS 合計購入数,
+      ec_purchase_details.item_id,
+      ec_item_master.name,
+      ec_item_master.price,
+      ec_item_master.img,
+      ec_item_master.status,
+      ec_item_master.area, 
+      ec_item_master.taste, 
+      ec_item_master.taste_intensity, 
+      ec_item_master.comment
+    FROM
+      ec_purchase_details
+    JOIN
+      ec_item_master
+    ON
+      ec_purchase_details.item_id = ec_item_master.item_id
+    GROUP BY
+      ec_purchase_details.amount,
+      ec_purchase_details.item_id,
+      ec_item_master.name,
+      ec_item_master.price,
+      ec_item_master.img
+    ORDER BY
+      合計購入数 DESC
+    LIMIT 
+      3
+  ";
+  return fetch_all_query($db, $sql);
+}
+
 
 /**
  * 購入履歴テーブルに購入履歴を登録

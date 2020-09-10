@@ -9,6 +9,8 @@ require_once MODEL_PATH . 'user.php';
 require_once MODEL_PATH . 'db.php';
 // itemデータに関する関数ファイルの読み込み
 require_once MODEL_PATH . 'item.php';
+// historyデータに関する関数ファイルの読み込み
+require_once MODEL_PATH . 'history.php';
 
 // 検索条件の変数を初期化
 $search_text = '';
@@ -33,6 +35,9 @@ $db = get_db_connect();
 
 // PDOを利用してログインユーザーのデータを取得
 $user = get_login_user($db);
+
+// 全ユーザーの購入商品数TOP3のデータを取得
+$ranks = get_details_ranking($db);
 
 // 検索フォームからpostされた場合
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
