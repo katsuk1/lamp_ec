@@ -6,9 +6,6 @@ body {
 a {
     text-decoration: none;
 }
-img {
-    max-width: 100%;
-}
 li {
     list-style: none;
 }
@@ -128,6 +125,72 @@ aside {
 .conditions ul {
     padding-inline-start: 0;
 }
+/*ランキング
+--------------------------*/
+.ranking-wrapper {
+    margin: 0 auto;
+    width: 52%;
+    font-family: "Sawarabi Gothic";
+}
+.ranking {
+    background    : rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+}
+.ranking h2 {
+    border-bottom : ridge 2px #ffaa00;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.ranking-list {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding: 1px;
+    counter-reset: rank 0;
+}
+.ranking-list li {
+    margin: 10px;
+    counter-increment: rank;
+    background-color: #ff9933;
+    border-radius: 5px;
+}
+.card::before {
+    content: "";
+    font-size: 1.2rem;
+    font-weight: 700;
+    top: 25%;
+    left: -50px;
+    width: 45px;
+    height: 80px;
+    position: absolute;
+    background: url(../img/019_star.png) no-repeat 0 25px;
+    background-size: contain;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.ranking-text::before {
+    content: "No." counter(rank);
+    position: absolute;
+}
+.ranking-list li:first-child {
+    color: gold;
+}
+.ranking-list li:nth-child(2) {
+    color: silver;
+}
+.ranking-list li:nth-child(3) {
+    color: #ba5b31;
+}
+.c-card-list__inbox {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    justify-content: flex-start;
+}
+.card p {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    word-break: break-all;
+}
 
 /*モバイル版
 ---------------------------*/
@@ -154,5 +217,12 @@ aside {
     }
     .text {
         width: 8em;
+    }
+    .c-card-list__inbox {
+        display: block;
+        text-align: center;
+    }
+    .ranking-wrapper {
+        width: 90%;
     }
 }

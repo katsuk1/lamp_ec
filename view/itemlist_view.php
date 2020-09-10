@@ -195,6 +195,57 @@ if($items_num['num'] > 0){
                 </nav>
             </article>
         </div>
+        <div class="ranking-wrapper">
+            <div class="ranking">
+                <h2 class="h2">人気ランキング</h2>
+                <ul class="ranking-list">
+<?php foreach ($ranks as $rank) { ?>
+                    <li class="card ranking-text">
+                        <div class="c-card-list__inbox card-body">
+                            <div class = "img">
+                                <img src = <?php print h(IMAGE_PATH . $rank['img']); ?>>
+                            </div>
+                            <div class="c-card-list__text">
+                                <p><?php print  h($rank['name']); ?></p>
+                                <p><?php print h(number_format($rank['price'])); ?>円(税込)</p>
+                            </div>
+                            <div class="c-detail">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modal<?php print $rank['item_id']; ?>">詳細</button>
+                                <div id="modal<?php print $rank['item_id']; ?>" class="modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-primary"><!-- ヘッダー -->
+                                                <h5 class="modal-title"><?php print h($rank['name']); ?></h5>
+                                                <button class="btn btn-secondary" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body border-primary">
+                                                
+                                                <div class="card">
+                                                    <img class="card-img-top" src ="<?php print IMAGE_PATH . $rank['img']; ?>" alt = "商品画像" >
+                                                    <div class="card-body bg-primary">
+                                                        <p class="card-text">特徴<br><?php print h($rank['comment']) ?></p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-left">価格:<?php print h($rank['price']); ?>円(税込)</p>
+                                                <p class="text-left">地域:<?php print h($rank['area']); ?></p>
+                                                <p class="text-left">味:<?php print h($rank['taste']); ?></p>
+                                                <p class="text-left">濃さ:<?php print h($rank['taste_intensity']); ?></p>
+                                                
+                                                
+                                            </div>
+                                            <div class="modal-footer border-primary"><!-- フッター -->
+                                                <button class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+<?php } ?>
+                </ul>
+            </div>
+        </div>
     </div>
 <?php include VIEW_PATH . 'templates/footer.php'; ?>
 </body>

@@ -7,5 +7,5 @@
 <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
-<link rel="icon" href="./img/favicon.ico">
-<link rel="stylesheet" href="css/html5reset-1.6.1.css">
+<link rel="icon" href="../../assets/img/favicon.ico">
+<link rel="stylesheet" href="../../assets/css/html5reset-1.6.1.css">
