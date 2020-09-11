@@ -41,7 +41,7 @@ function get_item($db, $item_id){
  * 商品データ全てorステータスが公開の商品データを全て取得
  * 
  * $is_openにtrueを渡せばステータスが公開の商品を取得
- * $startを渡せば$startから8件ずつ取得
+ * $startを渡せば$startから指定の件数ずつ取得
  * 
  * @param obj $db PDO
  * @param bool $is_open フラグ
