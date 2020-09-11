@@ -86,5 +86,3 @@ http://onramen.com/login.php
 
 ## About me
 新卒で1年3ヶ月不動産売買仲介会社に勤務しておりました。2020年6月からエンジニアを目指して勉強中です。
-
-twitter: https://twitter.com/kato_satsu

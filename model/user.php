@@ -219,6 +219,7 @@ function is_valid_same_user($db, $name){
   if($value['name'] === $name){
     return false;
   }
+  return true;
 }
  
 
