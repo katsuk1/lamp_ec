@@ -14,7 +14,7 @@ http://onramen.com/login.php
 
 [管理ユーザー]
 ユーザー名:admin
-パスワード:password
+パスワード:admin
 
 ## 制作の背景
 
